@@ -1,0 +1,18 @@
+{% extends 'generic/base.html' %}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    {% block body_block %}
+    <form method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <input type="submit" value="register">
+    </form>
+    {% endblock %}
+</body>
+</html>
