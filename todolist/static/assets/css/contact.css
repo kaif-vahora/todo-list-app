@@ -4,7 +4,7 @@
     font-family: "montserrat",sans-serif;
   }
   .contact-section{
-    background: url("/static/assets/images/contactus1.webp") no-repeat center;
+    /* background: url("/static/assets/images/contactus1.webp") no-repeat center; */
     background-size: cover;
     padding: 70px 0;
   }
@@ -15,7 +15,7 @@
   .border{
     width: 100px;
     height: 10px;
-    background: #34495e;
+    background: #fa65b1;
     margin: 40px auto;
   }
   
@@ -32,10 +32,10 @@
     box-sizing: border-box;
     margin: 16px 0;
     border: 0;
-    background: #111;
+    background: #ddd;
     padding: 20px 40px;
     outline: none;
-    color: #ddd;
+    color: rgb(19, 16, 16);
     transition: 0.5s;
   }
   .contact-form-text:focus{
@@ -48,7 +48,7 @@
   .contact-form-btn{
     float: right;
     border: 0;
-    background: #34495e;
+    background: #fa65b1;
     color: #fff;
     padding: 12px 50px;
     border-radius: 20px;
@@ -56,6 +56,6 @@
     transition: 0.5s;
   }
   .contact-form-btn:hover{
-    background: #2980b9;
+    background: #ceadbe;
   }
   

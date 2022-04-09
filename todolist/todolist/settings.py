@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'generic',
     'Userapp',
     'crispy_forms'
 ]
@@ -140,6 +139,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = '/user/index/'
+LOGIN_REDIRECT_URL = '/user/add/'
 
 LOGOUT_REDIRECT_URL = '/user/userlogin/'
