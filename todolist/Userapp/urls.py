@@ -11,11 +11,10 @@ urlpatterns = [
     path("index/",views.index),
     path('home/', views.Homepage),
     path('contact/', views.contact,name='contact'),
-    path('signup/', views.signUp,name='signup'),
     path("logout/",views.Logout,name="logout"),
     path('add/',AddTask.as_view(),name='add_task'),
     path('view/',ViewTask.as_view(),name='view_task'),
-    path('<int:pk>/view/',DetailTask.as_view(),name='detail_task'),
+    path('<int:pk>/detail/',DetailTask.as_view(),name='detail_task'),
     path('<int:pk>/delete/',DeleteTask.as_view(),name='delete_task'),
     path('<int:pk>/update/',UpdateTask.as_view(),name='update_task'),
 ]

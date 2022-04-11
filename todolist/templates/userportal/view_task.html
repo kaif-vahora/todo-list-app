@@ -1,4 +1,4 @@
-{% extends 'userportal/base1.html' %}
+{% extends 'userportal/base2.html' %}
 {% block container %}
 <table class='table'>
     <tr>
@@ -13,12 +13,12 @@
         <tbody>
             {% for task in tasks %}
             <tr>
-                <td><a href="">{{task.id}}</a></td>
+                <td><a href="{% url 'user_urls:detail_task' task.pk %}">{{task.id}}</a></td>
                 <td>{{task.task_name}}</td>
                 <td>{{task.task_description}}</td>
                 <td>
-                    <a class="btn btn-danger" href = "">Delete</a>
-                    <a class="btn btn-primary" href = "">Update</a>
+                    <a class="btn btn-danger" href = "{% url 'user_urls:delete_task' task.pk %}">Delete</a>
+                    <a class="btn btn-primary" href = "{% url 'user_urls:update_task' task.pk %}">Update</a>
 
                 </td>
             </tr>

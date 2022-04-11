@@ -49,9 +49,6 @@ def contact(request):
         messages.success(request, 'Your message has been sent!')
     return render(request,'userportal/contactus.html')
 
-def signUp(request):
-    return render(request,"userportal/signup.html")
-
 def Logout(request):
     return render(request, 'userportal/index.html')
 
